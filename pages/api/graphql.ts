@@ -13,8 +13,14 @@ export const config = {
 
 const resolvers: Resolvers = {
   Query: {
+    postById: async (_, { id }) => {
+      return prisma.post.findUnique({
+        where: { id },
+        select: { id: true, title: true },
+      });
+    },
     posts: async (parent, args, {}) => {
-      return await prisma.post.findMany({ select: { id: true, title: true } });
+      return prisma.post.findMany({ select: { id: true, title: true } });
     },
   },
 };
