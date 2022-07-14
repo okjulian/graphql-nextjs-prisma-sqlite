@@ -4,6 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { join } from "path";
 import { Resolvers } from "../../generates/graphql";
 import { prisma } from "../../lib/prisma";
+import { renderGraphiQL } from "@graphqlapps/render-graphiql";
 
 export const config = {
   api: {
@@ -31,6 +32,7 @@ export default createServer<{
 }>({
   endpoint: "/api/graphql",
   logging: true,
+  renderGraphiQL,
   schema: {
     typeDefs: readFileSync(join(process.cwd(), "schema.graphql"), "utf-8"),
     resolvers,
