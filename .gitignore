@@ -34,4 +34,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 prisma/test.db
+prisma/test.db-journal
 generates
