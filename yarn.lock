@@ -997,10 +997,10 @@
     y-indexeddb "^9.0.8"
     yjs "^13.5.39"
 
-"@graphqlapps/render-graphiql@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@graphqlapps/render-graphiql/-/render-graphiql-0.0.7.tgz#17fcb20ab3dfe354743df59f9079dea9422b7d36"
-  integrity sha512-GwAK007RetfojEDb4uhm8BCpRF05E1Ag6LSwKuAaId6/nCau2mfnJmUfY5NaCC1t2vPZznBoVL7sOI8KgC+6Sw==
+"@graphqlapps/render-graphiql@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@graphqlapps/render-graphiql/-/render-graphiql-0.0.9.tgz#21366511e0792a523c0cf207d3d9ad65010c2b73"
+  integrity sha512-H4LfL3teeXBaySjIvZ+vldyjwfYFuaMWAePYw3DmajCtwtrTvUdW14MTyilGNnbIIm6ptIhtEfwrVYdDUvt1xQ==
   dependencies:
     "@graphqlapps/gql" "*"
     "@graphqlapps/gql-app" "*"
