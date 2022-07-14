@@ -7,7 +7,7 @@
     "predev": "prisma generate && yarn codegen",
     "migrate:dev": "prisma migrate dev --name dev-migration",
     "build": "next build",
-    "postbuild": "yarn migrate:dev",
+    "postinstall": "yarn migrate:dev",
     "start": "next start",
     "lint": "next lint",
     "codegen": "graphql-codegen --config codegen.yml"
