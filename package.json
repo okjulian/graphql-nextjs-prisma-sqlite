@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "predev": "prisma generate && yarn codegen",
+    "migrate:dev": "prisma migrate dev --name dev-migration",
     "build": "next build",
+    "postinstall": "yarn migrate:dev",
     "start": "next start",
     "lint": "next lint",
     "codegen": "graphql-codegen --config codegen.yml"
@@ -13,6 +15,7 @@
   "dependencies": {
     "@graphql-codegen/cli": "^2.7.0",
     "@graphql-yoga/node": "^2.12.0",
+    "@graphqlapps/render-graphiql": "^0.0.9",
     "@prisma/client": "^4.0.0",
     "graphql": "^16.5.0",
     "next": "12.2.1",

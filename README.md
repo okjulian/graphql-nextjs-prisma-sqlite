@@ -1,4 +1,4 @@
-# Test
+# Prisma + SQLite + GraphQL + Codesandbox test
 
 ```bash
 npx create-next-app --ts test

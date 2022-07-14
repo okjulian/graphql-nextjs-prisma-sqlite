@@ -1,5 +1,10 @@
 type Query {
   posts: [Post!]!
+  postById(id: Int!): Post
+}
+
+type Mutation {
+  createPost(title: String!): Post
 }
 
 type Post {
