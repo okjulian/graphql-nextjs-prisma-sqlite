@@ -24,6 +24,14 @@ const resolvers: Resolvers = {
       return prisma.post.findMany({ select: { id: true, title: true } });
     },
   },
+  Mutation: {
+    createPost: async (_, { title }) => {
+      return prisma.post.create({
+        data: { title },
+        select: { id: true, title: true },
+      });
+    },
+  },
 };
 
 export default createServer<{
